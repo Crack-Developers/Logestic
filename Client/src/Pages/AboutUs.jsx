@@ -22,7 +22,7 @@ const AboutUs = () => {
             In 2024, amidst a year marked by both personal and academic challenges, Sam Vinny Fred J embarked on a journey that would transform his life and the freight forwarding industry. The same year marked the beginning of a new chapter for Sam, who had faced numerous hurdles, including struggles during his college years and moments of doubt. Despite being an average student with a notable academic setback in his final year, Sam's resilience and determination became the driving force behind the inception of this company.
           </p>
           <p className="text-gray-700 text-center max-w-4xl mx-auto leading-relaxed mt-4">
-            Unlike many families who might have discouraged unconventional paths, Sam’s family supported his dream of starting a business, providing a foundation of encouragement and belief. Since its inception, Fred Freight Forwarding has established itself as a committed player in the freight forwarding industry. Our dedication to providing reliable and efficient services has been central to our growth. We have made significant strides, with a clear focus on becoming an influential player in the global freight forwarding landscape.
+            Unlike many families who might have discouraged unconventional paths, Sam’s family supported his dream of starting a business, providing a foundation of encouragement and belief. Since its inception, Samporto Forwarding has established itself as a committed player in the freight forwarding industry. Our dedication to providing reliable and efficient services has been central to our growth. We have made significant strides, with a clear focus on becoming an influential player in the global freight forwarding landscape.
           </p>
           <p className="text-gray-700 text-center max-w-4xl mx-auto leading-relaxed mt-4">
             While global expansion is a part of our strategy, our primary goal is to establish a significant and impactful presence in the industry. We aim to set new standards through exceptional service and innovative solutions. Our mission is to inspire others by showcasing that skills and perseverance are crucial to achieving success, beyond traditional academic metrics.
@@ -62,7 +62,7 @@ const AboutUs = () => {
 
         <hr className="border-t border-gray-300 mx-auto w-2/3" />
 
-        {/* Our Core Values Section */}
+        {/* Our Core Values Section 
         <section className="mt-16">
           <h2 className="text-3xl font-bold text-center mb-6">Our Core Values</h2>
           <p className="text-gray-700 text-center max-w-4xl mx-auto leading-relaxed">
@@ -75,7 +75,7 @@ const AboutUs = () => {
             <li className="mb-4"><span className="font-semibold">B – Best trained:</span> And well-experienced team.</li>
             <li className="mb-4"><span className="font-semibold">E – Excellence:</span> In pursuing the highest quality services for our clients.</li>
           </ul>
-        </section>
+        </section>*/}
       </div>
     </div>
   );

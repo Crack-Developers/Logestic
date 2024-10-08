@@ -13,14 +13,14 @@ const App = () => {
   return (
     <div>
       <Navbar />
-        <Routes>
+        <div className="mt-[90px]"><Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/bookonline" element={<Events />} />
           <Route path="/packaging" element={<Packeging />} />
           <Route path="/get-a-quote" element={<GetAQuote />} />
           <Route path="/career" element={<Career />} />
-        </Routes>
+        </Routes></div>
       <Footer />
     </div>
   );

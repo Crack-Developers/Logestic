@@ -38,7 +38,7 @@ const GetAQuote = () => {
             </button>
           </div>
 
-          <form>
+          <form action="https://getform.io/f/bpjmqqzb" method="POST">
             {selectedOption === "shipping" && (
               <>
                 {/* Shipping Attributes */}
@@ -49,28 +49,29 @@ const GetAQuote = () => {
                     <label htmlFor="transportationBy" className="block text-sm font-medium text-gray-700">
                       Transportation by
                     </label>
-                    <select
-                      id="transportationBy"
-                      className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                      style={{ maxHeight: '150px', overflowY: 'auto' }} // Added scroll bar
-                    >
-                      <optgroup label="Automatic" className="font-semibold text-blue-500">
-                        <option>All transport</option>
-                      </optgroup>
-                      <optgroup label="Sea" className="font-semibold text-blue-500">
-                        <option>Full container load (FCL)</option>
-                        <option>Less container load (LCL)</option>
-                        <option>Bulk</option>
-                      </optgroup>
-                      <optgroup label="Rail" className="font-semibold text-blue-500">
-                        <option>Full wagon load (FwL)</option>
-                        <option>Less wagon load (LwL)</option>
-                      </optgroup>
-                      <optgroup label="Air" className="font-semibold text-blue-500">
-                        <option>Standard cargo</option>
-                        <option>ULD Container</option>
-                      </optgroup>
-                    </select>
+                    <select name="Transpotation by : "
+  id="transportationBy"
+  className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+  style={{ maxHeight: '150px', overflowY: 'auto' }} // Added scroll bar
+>
+  <optgroup  label="Automatic" className="text-lg font-semibold text-blue-600 bg-gray-100">
+    <option  className="text-gray-700 hover:bg-indigo-50">All transport</option>
+  </optgroup>
+  <optgroup label="Sea" className="text-lg font-semibold text-blue-600 bg-gray-100">
+    <option className="text-gray-700 hover:bg-blue-50">Full container load (FCL)</option>
+    <option className="text-gray-700 hover:bg-blue-50">Less container load (LCL)</option>
+    <option className="text-gray-700 hover:bg-blue-50">Bulk</option>
+  </optgroup>
+  <optgroup label="Rail" className="text-lg font-semibold text-blue-600 bg-gray-100">
+    <option className="text-gray-700 hover:bg-green-50">Full wagon load (FwL)</option>
+    <option className="text-gray-700 hover:bg-green-50">Less wagon load (LwL)</option>
+  </optgroup>
+  <optgroup label="Air" className="text-lg font-semibold text-blue-600 bg-gray-100">
+    <option className="text-gray-700 hover:bg-red-50">Standard cargo</option>
+    <option className="text-gray-700 hover:bg-red-50">ULD Container</option>
+  </optgroup>
+</select>
+
                   </div>
 
                   {/* Container type */}
@@ -79,6 +80,7 @@ const GetAQuote = () => {
                       Container type
                     </label>
                     <select
+                    name="Container type : "
                       id="containerType"
                       value={selectedContainerType}
                       onChange={handleContainerTypeChange}
@@ -117,6 +119,7 @@ const GetAQuote = () => {
                       Container quantity
                     </label>
                     <input
+                    name="Contaier Quality : "
                       type="text"
                       id="containerQuantity"
                       className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
@@ -128,7 +131,7 @@ const GetAQuote = () => {
                     <label htmlFor="weight" className="block text-sm font-medium text-gray-700">
                       Weight
                     </label>
-                    <input
+                    <input name="Weight :"
                       type="text"
                       id="weight"
                       className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
@@ -140,7 +143,7 @@ const GetAQuote = () => {
                     <label htmlFor="from" className="block text-sm font-medium text-gray-700">
                       From
                     </label>
-                    <input
+                    <input name="From : "
                       type="text"
                       id="from"
                       className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
@@ -152,7 +155,7 @@ const GetAQuote = () => {
                     <label htmlFor="to" className="block text-sm font-medium text-gray-700">
                       To
                     </label>
-                    <input
+                    <input name="To : "
                       type="text"
                       id="to"
                       className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
@@ -164,7 +167,7 @@ const GetAQuote = () => {
                     <label htmlFor="additionalInformation" className="block text-sm font-medium text-gray-700">
                       Additional Information
                     </label>
-                    <textarea
+                    <textarea name="Additional Information"
                       id="additionalInformation"
                       className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                       rows="3"
@@ -184,7 +187,7 @@ const GetAQuote = () => {
                     <label htmlFor="typeOfGoods" className="block text-sm font-medium text-gray-700">
                       Type of Goods
                     </label>
-                    <select
+                    <select name="Type of Goods : "
                       id="typeOfGoods"
                       className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                       style={{ maxHeight: '150px', overflowY: 'auto' }} // Added scroll bar
@@ -210,7 +213,7 @@ const GetAQuote = () => {
                     <label htmlFor="packageQuantity" className="block text-sm font-medium text-gray-700">
                       Package Quantity
                     </label>
-                    <input
+                    <input name="Package Quantity : "
                       type="text"
                       id="packageQuantity"
                       className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
@@ -222,7 +225,7 @@ const GetAQuote = () => {
                     <label htmlFor="packageDimensions" className="block text-sm font-medium text-gray-700">
                       Package Dimensions (LxWxH)
                     </label>
-                    <input
+                    <input name="Package Dimensions : "
                       type="text"
                       id="packageDimensions"
                       className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
@@ -234,7 +237,7 @@ const GetAQuote = () => {
                     <label htmlFor="packageWeight" className="block text-sm font-medium text-gray-700">
                       Package Weight
                     </label>
-                    <input
+                    <input name="Package Weight : "
                       type="text"
                       id="packageWeight"
                       className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
@@ -246,7 +249,7 @@ const GetAQuote = () => {
                     <label htmlFor="warehouseFrom" className="block text-sm font-medium text-gray-700">
                       From
                     </label>
-                    <input
+                    <input name="From : "
                       type="text"
                       id="warehouseFrom"
                       className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
@@ -258,7 +261,7 @@ const GetAQuote = () => {
                     <label htmlFor="warehouseTo" className="block text-sm font-medium text-gray-700">
                       To
                     </label>
-                    <input
+                    <input name="To : "
                       type="text"
                       id="warehouseTo"
                       className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
@@ -270,7 +273,7 @@ const GetAQuote = () => {
                     <label htmlFor="additionalInformationWarehouse" className="block text-sm font-medium text-gray-700">
                       Additional Information
                     </label>
-                    <textarea
+                    <textarea name="Additional Information : "
                       id="additionalInformationWarehouse"
                       className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                       rows="3"
@@ -291,7 +294,7 @@ const GetAQuote = () => {
                   <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                     <FontAwesomeIcon icon={faUser} className="text-gray-400" />
                   </div>
-                  <input
+                  <input name="Name : "
                     type="text"
                     id="name"
                     className="pl-10 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
@@ -307,7 +310,7 @@ const GetAQuote = () => {
                   <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                     <FontAwesomeIcon icon={faEnvelope} className="text-gray-400" />
                   </div>
-                  <input
+                  <input name="Email : "
                     type="email"
                     id="email"
                     className="pl-10 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
@@ -323,7 +326,7 @@ const GetAQuote = () => {
                   <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                     <FontAwesomeIcon icon={faBuilding} className="text-gray-400" />
                   </div>
-                  <input
+                  <input name="Company : "
                     type="text"
                     id="company"
                     className="pl-10 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
@@ -339,7 +342,7 @@ const GetAQuote = () => {
                   <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                     <FontAwesomeIcon icon={faPhone} className="text-gray-400" />
                   </div>
-                  <input
+                  <input name="Phone : "
                     type="tel"
                     id="phone"
                     className="pl-10 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"

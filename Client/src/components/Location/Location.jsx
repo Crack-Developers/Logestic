@@ -12,7 +12,7 @@ const Location = () => {
 
           <div className="rounded-xl ">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.6438508868196!2d80.21791737380839!3d12.866264617181521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525bbace477413%3A0xf70e4decbbd645ea!2sJeppiaar%20Engineering%20College!5e0!3m2!1sen!2sin!4v1722743965654!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3903.5301489538365!2d79.51709027441262!3d11.937751536701922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sNo.%209%2C10%20First%20Floor%2C%20Sri%20Sri%20Sri%20Thirumal%20Complex%2C%20Opp%3A%20TN%20Housing%20Board%2C%20East%20Pondy%20Road%2C%20Maharajapuram%2C%20Villupuram%20605602!5e0!3m2!1sen!2sin!4v1727414229512!5m2!1sen!2sin"
               width="100%"
               height="360"
               allowfullscreen=""

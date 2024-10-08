@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { motion } from "framer-motion";
-import NameLogo from "../../assets/name_logo.jpeg";
+import NameLogo from "../../assets/name_logo.png";
 
 const NavbarMenu = [
   { id: 1, title: "Home", path: "/" },

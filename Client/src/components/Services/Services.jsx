@@ -1,5 +1,5 @@
 import React from "react";
-import { IoCube, IoAirplane, IoBusiness, IoCart, IoBarChart, IoPeople } from "react-icons/io5"; // Updated icons for logistics
+import { IoCube, IoAirplane, IoBusiness, IoCartOutline, IoSpeedometer, IoPeople } from "react-icons/io5"; // Updated icons for logistics
 import { motion } from "framer-motion";
 
 const ServicesData = [
@@ -11,32 +11,11 @@ const ServicesData = [
     delay: 0.2,
   },
   {
-    id: 2,
-    title: "Supply Chain Management",
-    link: "#",
-    icon: <IoBusiness />,
-    delay: 0.3,
-  },
-  {
     id: 3,
     title: "Warehousing & Distribution",
     link: "#",
     icon: <IoCube />,
     delay: 0.4,
-  },
-  {
-    id: 4,
-    title: "E-commerce Fulfillment",
-    link: "#",
-    icon: <IoCart />,
-    delay: 0.5,
-  },
-  {
-    id: 5,
-    title: "Data Analytics & Optimization",
-    link: "#",
-    icon: <IoBarChart />,
-    delay: 0.6,
   },
   {
     id: 6,
@@ -74,7 +53,7 @@ const Services = () => {
         </h1>
         <div className="text-left pb-10">
           <p className="mb-4">
-            Welcome to [Your Logistics Company Name]!
+          Welcome to Samporto Freight Forwarding!
           </p>
           <p className="mb-4">
             Since our inception, we’ve been dedicated to providing top-notch logistics solutions. Our commitment to excellence and innovation drives us to offer a comprehensive range of services that ensure efficient and reliable supply chain management. Whether it’s freight forwarding, warehousing, or e-commerce fulfillment, we are here to handle all your logistics needs with precision and care.
@@ -83,7 +62,7 @@ const Services = () => {
             Partner with us to streamline your logistics and grow your business!
           </p>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-8">
           {ServicesData.map((service) => (
             <motion.div
               key={service.id}

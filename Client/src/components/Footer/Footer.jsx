@@ -14,36 +14,16 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 md:gap-4">
           {/* first section */}
           <div className="space-y-4 max-w-[300px]">
-            <h1 className="text-2xl font-bold">Fred Freight Forwarding</h1>
+            <h1 className="text-2xl font-bold">Samporto Freight Forwarding</h1>
             <p className="text-dark2">
-            Empowering innovation, advancing technology for a better tomorrow. 
-            Join IEEE and be a part of the future today.
+              Sending Love And Logistics,<br /> Hand In Hand.
             </p>
-            <button>sign in</button>
+            {/*<button>sign in</button>*/}
           </div>
           {/* second section */}
           <div className="grid grid-cols-2 gap-10">
             <div className="space-y-4">
-              <h1 className="text-2xl font-bold">Courses</h1>
-              <div className="text-dark2">
-                <ul className="space-y-2 text-lg">
-                  <li className="cursor-pointer hover:text-secondary duration-200">
-                    Web Development
-                  </li>
-                  <li className="cursor-pointer hover:text-secondary duration-200">
-                    Software Development
-                  </li>
-                  <li className="cursor-pointer hover:text-secondary duration-200">
-                    Apps Development
-                  </li>
-                  <li className="cursor-pointer hover:text-secondary duration-200">
-                    E-learning
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="space-y-4">
-              <h1 className="text-2xl font-bold">Links</h1>
+              <h1 className="text-2xl font-bold">Pages</h1>
               <div className="text-dark2">
                 <ul className="space-y-2 text-lg">
                   <li className="cursor-pointer hover:text-secondary duration-200">
@@ -53,10 +33,29 @@ const Footer = () => {
                     About Us
                   </li>
                   <li className="cursor-pointer hover:text-secondary duration-200">
-                    Gallery
+                    Packaging
                   </li>
                   <li className="cursor-pointer hover:text-secondary duration-200">
-                    Contact
+                    Career
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="space-y-4">
+              <h1 className="text-2xl font-bold">Links</h1>
+              <div className="text-dark2">
+                <ul className="space-y-2 text-lg">
+                  <li className="cursor-pointer hover:text-secondary duration-200">
+                    LinkedIn
+                  </li>
+                  <li className="cursor-pointer hover:text-secondary duration-200">
+                    Facebook
+                  </li>
+                  <li className="cursor-pointer hover:text-secondary duration-200">
+                    Instagram
+                  </li>
+                  <li className="cursor-pointer hover:text-secondary duration-200">
+                    Youtube
                   </li>
                 </ul>
               </div>

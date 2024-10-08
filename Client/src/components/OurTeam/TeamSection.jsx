@@ -1,14 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Slider from "react-slick";
+import img1 from "../../assets/CEO.jpeg";
 import img from "../../assets/m.jpg";
 /* Add this to your main CSS file */
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const teamMembers = [
-  { id: 1, name: "Ms. Kayalvizhi S", designation: "Student Branch Coordinator", imgSrc: img },
-  { id: 2, name: "Bharani K", designation: "Chairman", imgSrc: img },
+  { id: 1, name: "Sam Vinny Fred J", designation: "Founder & CEO", imgSrc: img1 },
+  { id: 2, name: "John De Britto L", designation: "Managing Director", imgSrc: img },
 ];
 
 const settings = {
@@ -24,7 +25,7 @@ const TeamSection = () => {
   return (
     <section className="bg-white py-14">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Meet Our Team</h2>
+        <h2 className="text-3xl font-bold text-center mb-12">Our Core Team</h2>
         <div className="hidden md:flex flex-wrap justify-center gap-6">
           {teamMembers.map((member) => (
             <motion.div
@@ -62,7 +63,7 @@ const TeamSection = () => {
             ))}
           </Slider>
         </div>
-        {/* View More button */}
+        {/* View More button 
         <div className="text-center mt-10">
           <a
             className="inline-block bg-primary text-white py-2 px-6 rounded-full hover:bg-primary-dark transition duration-300"
@@ -70,7 +71,7 @@ const TeamSection = () => {
           >
             View More
           </a>
-        </div>
+        </div>*/}
       </div>
     </section>
   );
