@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Slider from "react-slick";
-import img1 from "../../assets/CEO.jpeg";
+import img1 from "../../assets/lp.jpeg";
 import img from "../../assets/m.jpg";
 /* Add this to your main CSS file */
 import "slick-carousel/slick/slick.css";

@@ -36,7 +36,7 @@ const Navbar = () => {
       >
         {/* Logo section */}
         <div className="flex-1">
-          <img src={NameLogo} alt="Logo" className="h-10 sm:h-12 lg:h-14" />
+          <img src={NameLogo} alt="Logo" className="h-10 sm:h-12 lg:h-14" /> 
         </div>
         {/* Menu section for desktop */}
         <div className="hidden lg:flex flex-1 justify-end items-center gap-4">
